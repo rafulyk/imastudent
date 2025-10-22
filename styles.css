@@ -1,0 +1,59 @@
+:root {
+    --gold-old: #DAA520;
+    --gold-pale: #EEE8AA;
+    --gold-matte: #B8860B;
+    --gold-rose: #B76E79;
+    --gold-white: #F5F5DC;
+    --gold-sunlight: #FDBD01;
+    --gold-bronze: #CD7F32;
+    --gold-sand: #F4A460;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: var(--gold-matte);
+  width: 100vw;
+  opacity: 0.85;
+  max-height: 7rem;
+}
+
+#nav-bar {
+display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+
+  }
+  
+  #nav-bar {
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+#header-img {
+max-height: 6rem;
+}
+
+#head {
+  grid-area: head;
+  
+}
+
+#video {
+  grid-area: video;
+}
+
+main {
+  padding-top: 7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "head head head"
+  "video video video";
+}
