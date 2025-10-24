@@ -58,6 +58,9 @@ main {
   margin: 0 auto 1rem;
   border-top: 0.3rem solid black;
   border-bottom: 0.3rem solid black;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 400;
 }
 
 #video {
@@ -71,7 +74,7 @@ main {
 
 #form {
  display:block;
- margin: 0 auto;
+ margin: 0 auto 2rem;
 }
 
 #head {
@@ -80,9 +83,6 @@ main {
   color: black;
   border-top: 0.2rem solid black;
   border-bottom: 0.2rem solid black;
- font-family: 'Playfair Display', serif;
-font-style: italic;
-font-weight: 400;
 font-size: 2.2rem;
 padding: 0.3rem;
 margin: 4rem 0 2rem;
@@ -92,4 +92,40 @@ body::before {
   display: block;
   content: "";
   height: 8rem;
+}
+
+#form {
+  border-top: 0.15rem solid black;
+  border-bottom: 0.15rem solid black;
+  padding: 0.8rem 10rem;
+}
+
+#form label {
+  box-shadow: 0 0 5px;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+#email {
+  background-color: var(--gold-silver);
+  border-radius: 5px;
+}
+
+#email:hover {
+  background-color: black;
+}
+
+#submit {
+margin: 0 2rem;
+background-color: var(--gold-rose);
+box-shadow: 0 0 5px white;
+border-radius: 5px;
+padding: 0.2rem 1rem;
+}
+
+#submit:hover {
+margin: 0 2rem;
+background-color: black;
+box-shadow: 0 0 5px white;
+color: var(--gold-rose);
 }
