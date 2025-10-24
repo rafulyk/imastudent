@@ -10,3 +10,6 @@ This marks my entry into web development - a responsive website built after **25
 - CSS positioning and layout
 - Responsive design principles
 - Version control with Git
+
+## 🗓️ Timeline
+- **Day 1-25:** freeCodeCamp curriculum
