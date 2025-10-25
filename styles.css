@@ -100,13 +100,17 @@ main {
 h1 {
   text-align: center;
   color: black;
-  border-top: 0.5rem double black;
-  border-bottom: 0.5rem double black;
+
 font-size: 2.4rem;
 font-weight: 549;
 padding: 0.5rem;
 margin: 4rem 0 2rem;
 background: linear-gradient(var(--gold2), var(--gold1));
+}
+
+h1, .cost h2 {
+    border-top: 0.5rem double black;
+  border-bottom: 0.5rem double black;
 }
 
 body::before {
@@ -116,8 +120,6 @@ body::before {
 }
 
 #form {
-  border-top: 0.15rem solid black;
-  border-bottom: 0.15rem solid black;
   padding: 0.8rem 10rem;
 }
 
@@ -158,6 +160,7 @@ color: var(--gold1);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+  background: linear-gradient(transparent, #704b3a);
 }
 
  #work {
@@ -171,7 +174,7 @@ color: var(--gold1);
   padding: 0.2rem 0;
 }
 
-#features h2, #work h3 {
+#features h2, #work h3, #form {
   border-top: 0.15rem solid black;
   border-bottom: 0.15rem solid black;
 }
@@ -182,7 +185,7 @@ color: var(--gold1);
  }
 
  #features p {
-font-weight: 530;
+font-weight: 550;
 padding: 0.2rem 1rem;
 background-color: var(--gold6);
  }
@@ -190,14 +193,91 @@ background-color: var(--gold6);
  #work p {
   margin: 0 2rem;
   padding: 1rem;
+  box-shadow: 3px 3px 5px var(--gold1);
  }
 
  #features p, #work p {
   background-color: var(--gold6);
-  box-shadow: 3px 3px 5px var(--gold1);
+
   text-align: justify;
  }
 
 ul > li {
   margin-bottom: 4rem;
+ }
+
+ #price {
+  display: flex;
+ justify-content: space-evenly;
+ gap: 2rem;
+ margin-bottom: 4rem;
+ }
+
+ .cost {
+  flex: 1;
+  text-align: justify;
+  background: url("https://i.ibb.co/KTn8jz3/tvorceskii-abstraktnyi-zolotoi-teksturirovannyi-material.jpg");
+  max-width: 18rem;
+  padding: 0.8rem 2rem;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 10px;
+ }
+
+ 
+ .cost p {
+  height: 7rem;
+  background: radial-gradient(transparent, var(--gold3));
+  padding: 0.3rem 1rem;
+ }
+
+ .cost h2 {
+  margin-bottom: 2rem;
+  padding: 0.3rem 1rem;
+ }
+
+ span {
+  color: #6e2300;
+  font-weight: 600;
+  font-size: 2rem;
+ }
+
+ .cost:hover, button:hover {
+  transform: scale(1.06);
+  transition: 0.2s;
+ }
+
+ button {
+display: block;
+margin: 2rem auto;
+width: 70%;
+height: 2rem;
+border-radius: 10px;
+background: radial-gradient(white, var(--gold2));
+letter-spacing: 0.2rem;
+font-weight: 800;
+box-shadow: 2px 2px 2px black;
+ }
+
+ button:hover {
+  background: radial-gradient(var(--gold2), black);
+  color: lightgreen;
+ }
+
+ footer {
+  text-align: right;
+  margin: 2rem;
+ }
+
+ footer a {
+  margin: 0.5rem;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 1px 3px;
+ }
+
+ footer a:hover {
+  background-color: white;
  }
